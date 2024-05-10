@@ -1,0 +1,10 @@
+# Apaga as linhas da tabela 'tabela_rotas' onde FOB for maior que 0
+
+delete from tabela_rotas
+where Incoterm = 'FOB' and `Vlr.Frete` > 0;
+
+
+# Apaga as linhas da tabela 'tabela_rotas' onda a data de emissao é maior que a de entrega
+
+delete from tabela_rotas
+where Dt_Emissao > Dt_Entrega;
